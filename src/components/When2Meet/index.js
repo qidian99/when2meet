@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import ScheduleSelector from 'react-schedule-selector'
 
-class Form extends Component {
+class When2Meet extends Component {
   constructor() {
     super();
     this.state = { schedule: [] };
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(newSchedule) {
@@ -13,6 +14,9 @@ class Form extends Component {
   }
 
   render() {
+    // setInterval(() => {
+    //   console.log('hahahaha');
+    // }, 1000);
     return (
       <ScheduleSelector
         selection={this.state.schedule}
@@ -25,8 +29,10 @@ class Form extends Component {
   }
 }
 
-export default Form;
+export default When2Meet;
 
 const wrapper = document.getElementById("container");
-wrapper ? ReactDOM.render(<Form />, wrapper) : false;
+const text = wrapper.getAttribute("data-text");
+console.log(text);
+wrapper ? ReactDOM.render(<When2Meet />, wrapper) : false;
 

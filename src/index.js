@@ -17,5 +17,7 @@
 // // Learn more about service workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();
 
-import Form from "./js/components/Form";
+// import When2Meet from "./components/When2Meet";
+// import InteractiveVideo from "./components/InteractiveVideo";
+import StyleTest from './components/StyleTest'
 

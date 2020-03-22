@@ -5,10 +5,13 @@ module.exports = {
     rules: [
       {
         test: /\.(js|jsx)$/,
+        resolve: {
+          extensions: [".js", ".jsx"],
+        },
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
-        }
+        },
       },
       {
         test: /\.html$/,
@@ -18,12 +21,12 @@ module.exports = {
           }
         ]
       }
-    ]
+    ],
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: "./src/index.html",
       filename: "./index.html"
     })
-  ]
+  ],
 };
