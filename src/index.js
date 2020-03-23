@@ -18,6 +18,6 @@
 // serviceWorker.unregister();
 
 // import When2Meet from "./components/When2Meet";
-// import InteractiveVideo from "./components/InteractiveVideo";
-import StyleTest from './components/StyleTest'
+import InteractiveVideo from "./components/InteractiveVideo";
+// import StyleTest from './components/StyleTest'
 
